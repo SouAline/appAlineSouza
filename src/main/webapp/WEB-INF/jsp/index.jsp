@@ -12,6 +12,19 @@
 </head>
 <body>
 
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Aline Eventos</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+           <li><a href="#">Agenda</a></li>
+        </ul>
+      </div>
+      </nav>
+  
+
 <div class="container">
   <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -25,15 +38,15 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
       <div class="item active">
-        <img src="img/mesa.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="src/images/mesa.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
-        <img src="img/tecnologia.jpg" alt="Chicago" style="width:100%;">
+        <img src="images/tecnologia.jpg" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="img/tecnologia1.jpg" alt="New york" style="width:100%;">
+        <img src="images/tecnologia1.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
 
