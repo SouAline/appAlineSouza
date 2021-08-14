@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,24 +12,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Aline Eventos</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-           <li><a href="#">Agenda</a></li>
-        </ul>
-      </div>
-      </nav>
-  
+<c:import url="/WEB/INF/jsp/menu.jsp"/>
 
-<div class="container">
-	<h2 Agenda de evento:</h2>
-</div>
+  <div class=container>
+  	<h2>Agenda de Eventos: ${eventos.size()} }</h2>
+  	<h3>* ${eventos} *</h3>
+  	</div>
  
 </body>
 </html>
