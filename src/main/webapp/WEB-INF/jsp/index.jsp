@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -12,19 +12,9 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Aline Eventos</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-           <li><a href="#">Agenda</a></li>
-        </ul>
-      </div>
-      </nav>
-  
 
+<c:import url="/WEB/INF/jsp/menu.jsp"/>
+  
 <div class="container">
   <h2>Carousel Example</h2>  
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -37,8 +27,9 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
+    
       <div class="item active">
-        <img src="src/images/mesa.jpg" alt="Los Angeles" style="width:100%;">
+        <img src="images/mesa.jpg" alt="Los Angeles" style="width:100%;">
       </div>
 
       <div class="item">
