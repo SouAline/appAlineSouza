@@ -9,6 +9,7 @@ public class EventoTestes {
 		evento.setNome("Palestra Auto Ajuda");
 		evento.setCidade("Cachoeirinha");
 		evento.setValorIngresso(15);
+		System.out.print("O evento custa R$: " + evento);
 
 	}
 
