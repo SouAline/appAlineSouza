@@ -1,7 +1,16 @@
 package code.com.desafio.appAlineSouza.model.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Evento {
 	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
 	private String nome;
 	private String local;
 	private String cidade;
@@ -9,10 +18,29 @@ public class Evento {
 	private boolean temAtracoes;
 	private String data;
 	
+	public Evento() {
+		this.valorIngresso = 25;
+		this.local = "Arena do Grêmio";
+		this.temAtracoes = true;	
+	}
+	
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public Evento(String nome, int valorIngresso) {
+		this();
+		this.nome = nome;
+		this.valorIngresso = valorIngresso;
+	}
 	
 	@Override
 	public String toString() {
-		return "O evento" + nome + "será na cidade" + cidade + "!!";
+		return nome + " no valor de R$: " + valorIngresso + "!!";
 	}
 	
 	public String getNome() {
