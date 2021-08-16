@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -12,8 +12,7 @@
 </head>
 <body>
 
-
-<c:import url="/WEB/INF/jsp/menu.jsp"/>
+<c:import url="/WEB-INF/jsp/menu.jsp"/>
   
 <div class="container">
   <h2>Carousel Example</h2>  

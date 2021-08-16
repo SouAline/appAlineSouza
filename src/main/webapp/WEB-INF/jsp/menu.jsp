@@ -5,7 +5,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
-           <li><a href="/eventos/agendaLista">Agenda</a></li>
+           <li><a href="eventos/agendaLista">Agenda</a></li>
         </ul>
       </div>
       </nav>
